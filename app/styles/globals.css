@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+/* Import the font using @import */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu");
+
+/* COLOURS */
+:root {
+  --purple: #8739f9;
+  --blue: #37b9f1;
+  --green: #14de5e;
+  /* --cream: #fff5e1; */
+  --cream: #fff5ea;
+  --off_back: #252525;
+  --white: white;
+}
+
+/* FONTS */
+
+:root {
+  --funkyFont: "CustomFont", sans-serif;
+  --woff2-font-source: url("./Mattone-150.woff2") format("woff2");
+  --woff-font-source: url("./Mattone-150.woff") format("woff");
+}
+
+/* @font-face rule using the variables */
+@font-face {
+  font-family: var(--custom-font-family);
+  src: var(--woff2-font-source), var(--woff-font-source);
+}
+
+:root {
+  --standardFont: "Roboto", sans-serif; /* Define a CSS variable for the font family */
+}
+
+/* STANDARD TEMPLATE */
+:root {
+  --base-font-size: 16px; /* Base font size for the entire application */
+
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.75rem;
+  --h3-font-size: 1.5rem;
+  --big-p-font-size: 1.25rem;
+  --p-font-size: 1rem;
+  --table-font-size: 0.875rem;
+  --button-font-size: 1rem; /* Default button font size */
+  --standard-padding: 4% 4%;
+  --standard-margin: 5% 5%;
+}
+
+/* SMALL SCREENS */
+@media screen and (max-width: 768px) {
+  :root {
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --big-p-font-size: 1rem;
+    --p-font-size: 0.875rem;
+    --table-font-size: 0.75rem;
+    --button-font-size: 0.75rem; /* Adjust the button font size for small screens */
+  }
+}
+
+/* MEDIUM SCREENS - LARGE SCREENS */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  :root {
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.75rem;
+    --big-p-font-size: 1.35rem;
+    --p-font-size: 1.125rem;
+    --table-font-size: 1rem;
+    --button-font-size: 1rem; /* Adjust the button font size for medium screens */
+  }
+}
+
+/* LARGE SCREENS + */
+@media screen and (min-width: 1024px) {
+  :root {
+    --h1-font-size: 3rem;
+    --h2-font-size: 2.5rem;
+    --h3-font-size: 2rem;
+    --big-p-font-size: 1.35rem;
+    --p-font-size: 1.25rem;
+    --table-font-size: 1.125rem;
+    --button-font-size: 1rem; /* Adjust the button font size for large screens */
+  }
+}
+/* XL LARGER SCREENS + */
+@media screen and (min-width: 1200px) {
+  :root {
+    --h1-font-size: 3rem;
+    --h2-font-size: 2.5rem;
+    --h3-font-size: 2rem;
+    --big-p-font-size: 1.4rem;
+    --p-font-size: 1.25rem;
+    --table-font-size: 1.125rem;
+    --button-font-size: 1rem; /* Adjust the button font size for large screens */
+  }
+}
+
+@layer base {
+  form {
+    @apply rounded-xl p-4;
+  }
+
+  label {
+    @apply mt-4;
+  }
+
+  input,
+  select,
+  textarea {
+    @apply m-1 rounded p-1 bg-red-700;
+  }
+}
+
+/* body {
+} */

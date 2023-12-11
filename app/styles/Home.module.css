@@ -1,0 +1,134 @@
+/* STANDARD TEMPLATE */
+@font-face {
+  font-family: "CustomFont";
+  src: url("./Mattone-150.woff2") format("woff2"),
+    url("./Mattone-150.woff") format("woff");
+}
+
+.Home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}
+
+.leftside {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    ),
+    url("../../public/temple (2).jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+}
+
+.rightside {
+  background-color: var(--cream);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1% 7%;
+}
+.urduTitle {
+  font-family: "Noto Nastaliq Urdu", serif;
+  font-size: 5rem;
+}
+
+.p-home {
+  font-size: var(--big-p-font-size);
+  font-family: var(--funkyFont), sans-serif;
+  text-align: justify;
+}
+
+.pHome2 {
+  font-size: var(--big-p-font-size);
+  font-family: var(--funkyFont), sans-serif;
+  text-align: justify;
+}
+
+.button-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  border: none;
+  width: 220px;
+  height: 60px;
+  border-radius: 0.25rem;
+  font-size: var(--button-font-size);
+  background-color: var(--purple);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+  font-family: var(--funkyFont), sans-serif;
+}
+
+.levelChoiceLink {
+  text-decoration: none;
+}
+
+.button-home span {
+  text-decoration: none;
+  margin: auto;
+}
+.button-home:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* SMALL SCREENS - MEDIUM SCREENS */
+
+@media (max-width: 767px) {
+  .logohome {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 35px;
+  }
+
+  #leftsideId {
+    display: none;
+  }
+
+  .rightside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .urduTitle {
+    font-size: 3rem;
+  }
+}
+/* MEDIUM SCREENS - LARGE SCREENS */
+@media (min-width: 767px) {
+  .logohome {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10px;
+  }
+
+  .p-home {
+    width: 100%;
+  }
+}
+/* LARGE SCREENS + */
+@media screen and (min-width: 1025px) {
+  .logohome {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* XL LARGER SCREENS + */
+@media (min-width: 1200px) {
+  .logohome {
+    width: 250px;
+    height: 250px;
+  }
+}
