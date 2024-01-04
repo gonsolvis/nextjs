@@ -21,11 +21,11 @@
 
 /* COLOURS */
 :root {
-  --purple: #8739f9;
+  --purple: #8962f0;
   --blue: #37b9f1;
   --green: #14de5e;
   /* --cream: #fff5e1; */
-  --cream: #fff5ea;
+  --cream: #f5f2f2;
   --off_back: #252525;
   --white: white;
 }
@@ -127,6 +127,13 @@
   select,
   textarea {
     @apply m-1 rounded p-1 bg-red-700;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply text-blacker;
   }
 }
 

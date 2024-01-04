@@ -1,0 +1,158 @@
+[
+  {
+    romanLetter: "Alif",
+    urduLetter: "ا",
+  },
+  {
+    romanLetter: "Bay",
+    urduLetter: "ب",
+  },
+  {
+    romanLetter: "Pay",
+    urduLetter: "پ",
+  },
+  {
+    romanLetter: "Tay",
+    urduLetter: "ت",
+  },
+  {
+    romanLetter: "TayD",
+    urduLetter: "ٹ",
+  },
+  {
+    romanLetter: "Say",
+    urduLetter: "ث",
+  },
+  {
+    romanLetter: "Jeem",
+    urduLetter: "ج",
+  },
+  {
+    romanLetter: "Che",
+    urduLetter: "چ",
+  },
+  {
+    romanLetter: "Hay",
+    urduLetter: "ح",
+  },
+  {
+    romanLetter: "Khay",
+    urduLetter: "خ",
+  },
+  {
+    romanLetter: "Dal",
+    urduLetter: "د",
+  },
+  {
+    romanLetter: "DalD",
+    urduLetter: "ڈ",
+  },
+  {
+    romanLetter: "Zaal",
+    urduLetter: "ذ",
+  },
+  {
+    romanLetter: "Ray",
+    urduLetter: "ر",
+  },
+  {
+    romanLetter: "RayD",
+    urduLetter: "ڑ",
+  },
+  {
+    romanLetter: "Zay",
+    urduLetter: "ز",
+  },
+  {
+    romanLetter: "Zwaad",
+    urduLetter: "ژ",
+  },
+  {
+    romanLetter: "Seen",
+    urduLetter: "س",
+  },
+  {
+    romanLetter: "Sheen",
+    urduLetter: "ش",
+  },
+  {
+    romanLetter: "Suaad",
+    urduLetter: "ص",
+  },
+  {
+    romanLetter: "Zuaad",
+    urduLetter: "ض",
+  },
+  {
+    romanLetter: "Toay",
+    urduLetter: "ط",
+  },
+  {
+    romanLetter: "Zoay",
+    urduLetter: "ظ",
+  },
+  {
+    romanLetter: "Ain",
+    urduLetter: "ع",
+  },
+  {
+    romanLetter: "Ghain",
+    urduLetter: "غ",
+  },
+  {
+    romanLetter: "Fay",
+    urduLetter: "ف",
+  },
+  {
+    romanLetter: "Qaaf",
+    urduLetter: "ق",
+  },
+  {
+    romanLetter: "Kaaf",
+    urduLetter: "ک",
+  },
+  {
+    romanLetter: "Gaaf",
+    urduLetter: "گ",
+  },
+  {
+    romanLetter: "Laam",
+    urduLetter: "ل",
+  },
+  {
+    romanLetter: "Meem",
+    urduLetter: "م",
+  },
+  {
+    romanLetter: "Noon",
+    urduLetter: "ن",
+  },
+  {
+    romanLetter: "Wow",
+    urduLetter: "و",
+  },
+  {
+    romanLetter: "Choti He",
+    urduLetter: "ہ",
+  },
+  {
+    romanLetter: "Ye",
+    urduLetter: "ی",
+  },
+  {
+    romanLetter: "Baari Ye",
+    urduLetter: "ے",
+  },
+  {
+    romanLetter: "Hamza",
+    urduLetter: "ء",
+  },
+  {
+    romanLetter: "Choti Yeh",
+    urduLetter: "ۓ",
+  },
+  {
+    romanLetter: "HeD",
+    urduLetter: "ھ",
+  },
+];

@@ -8,5 +8,29 @@ module.exports = {
     "./node_modules/flowbite/**/*.js",
   ],
   plugins: [require("flowbite/plugin")],
-  theme: {},
+  theme: {
+    extend: {
+      backgroundColor: {
+        cream: "#fff5ea",
+        purple: "#8962f0",
+        green: "#14de5e",
+        whiter: "#f5f2f2",
+        blacker: "#1b0b3b",
+      },
+      textColor: {
+        cream: "#fff5ea",
+        purple: "#8962f0",
+        green: "#14de5e",
+        whiter: "#f5f2f2",
+        blacker: "#1b0b3b",
+      },
+      borderColor: {
+        cream: "#fff5ea",
+        purple: "#8962f0",
+        green: "#14de5e",
+        whiter: "#f5f2f2",
+        blacker: "#1b0b3b",
+      },
+    },
+  },
 };
