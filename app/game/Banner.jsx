@@ -36,7 +36,7 @@ const Banner = (props) => {
                 Lives
               </h2>
               <p class="flex items-center justify-center  text-sm font-normal text-white dark:text-gray-400">
-                <HeartsComp hearts={props.hearts} />
+                <HeartsComp heartsLeft={props.hearts} />
               </p>
             </div>
           </a>

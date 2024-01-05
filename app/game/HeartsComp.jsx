@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
-function HeartsComp(props) {
-  console.log("HeartsComp", HeartsComp);
+function HeartsComp({ heartsLeft }) {
   const FIVE_HEARTS = (
     <div>
       <FontAwesomeIcon icon={faHeart} style={{ color: "red" }} />
@@ -55,7 +54,7 @@ function HeartsComp(props) {
   );
 
   function ShowRemainingHearts() {
-    if (props.hearts === 5) {
+    if (heartsLeft === 5) {
       return FIVE_HEARTS;
     } else if (heartsLeft === 4) {
       return FOUR_HEARTS;

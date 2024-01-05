@@ -6,6 +6,7 @@ import RightCard from "./rightCard";
 import axios from "axios";
 import SkeletonGameCardThree from "./SkeletonGameCardThree";
 import Banner from "./Banner";
+import GameOver from "./GameOver";
 
 const UrduLetterGame = () => {
   const [data, setData] = useState(null);
@@ -80,7 +81,6 @@ const UrduLetterGame = () => {
     } else {
       console.log("WRONG");
       setHearts((prevScore) => prevScore - 1); // Decrease the score by 1
-      setScore((prevScore) => prevScore + 1); // Increase the score by 1
 
       console.log(score);
     }
@@ -113,8 +113,9 @@ const UrduLetterGame = () => {
     <>
       {data ? (
         <div className=" flex flex-col justify-evenly border border-dotted border-yellow-300">
+          <div>{(!countdown || !hearts) && <GameOver />}</div>
+
           <div>
-            {" "}
             <Banner score={score} countdown={countdown} hearts={hearts} />
           </div>
           <div className="flex flex-row justify-evenly">
