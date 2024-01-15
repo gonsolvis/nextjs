@@ -10,11 +10,11 @@ function Nav() {
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <img
+          {/* <img
             src="/homepage-image.png"
             className="h-8 w-8"
             alt="ItaLit Logo"
-          />
+          /> */}
           <span className=" text-blacker self-center text-1xl font-semibold whitespace-nowrap ">
             ScriptLit
           </span>
@@ -54,14 +54,14 @@ function Nav() {
                 Home
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 href="/UrduLetterCreate/1234"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Levels
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 href="/lessons"
@@ -72,10 +72,18 @@ function Nav() {
             </li>
             <li>
               <Link
-                href="#"
+                href="/game"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Games
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/sign_up"
+                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >
+                Sign up
               </Link>
             </li>
             <li>

@@ -10,7 +10,7 @@ const CardComp = () => {
           icon={faLanguage}
           className="fas faLanguage text-red-500 text-3xl mx-2 my-1"
         /> */}
-        <div className="  w-20">
+        <div className=" flex justify-center  w-20">
           <FontAwesomeIcon
             icon={faLanguage}
             className="text-blacker mx-2 my-1"
@@ -18,7 +18,7 @@ const CardComp = () => {
         </div>
         <a href="#">
           <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-            Learn the alphabet
+            Alphabet part-one
           </h5>
         </a>
         <p className="mb-3 font-normal text-gray-500 dark:text-gray-400 text-justify">

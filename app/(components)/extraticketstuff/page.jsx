@@ -7,8 +7,6 @@ import axios from "axios";
 import SkeletonGameCardThree from "./SkeletonGameCardThree";
 import Banner from "./Banner";
 import GameOverModal from "./GameOverModal";
-import LeaderBoard from "./LeaderBoard";
-import LeaderBoard2 from "./LeaderBoard2";
 
 const UrduLetterGame = () => {
   const [data, setData] = useState(null);
@@ -66,7 +64,7 @@ const UrduLetterGame = () => {
 
     setRandomCards(newArrayOfNumbers.map((number) => cards[number]));
     setRandomNumberFromCardAmount(Math.floor(Math.random() * AMOUNT_OF_CARDS));
-    // console.log("setRandomCards", randomCards);
+    console.log("setRandomCards", randomCards);
   }
   useEffect(() => {
     if (data) {
@@ -76,8 +74,8 @@ const UrduLetterGame = () => {
 
   function ChecksIfMatchOnClick(card) {
     let leftCard = randomCards[randomNumberFromCardAmount]._id;
-    // console.log("Card clicked:", card);
-    // console.log("Card leftCard:", leftCard);
+    console.log("Card clicked:", card);
+    console.log("Card leftCard:", leftCard);
 
     if (leftCard === card) {
       console.log("MATCH");
@@ -87,10 +85,10 @@ const UrduLetterGame = () => {
       setTimeout(() => {
         setTextBigger(false);
       }, 1000);
-      // console.log(score);
+      console.log(score);
       createCards();
     } else {
-      // console.log("WRONG");
+      console.log("WRONG");
       setShake(true); // Set the shake state to true for the mismatch
 
       setTimeout(() => {
@@ -99,7 +97,7 @@ const UrduLetterGame = () => {
 
       setHearts((prevScore) => prevScore - 1); // Decrease the score by 1
 
-      // console.log(score);
+      console.log(score);
     }
   }
 
@@ -129,7 +127,7 @@ const UrduLetterGame = () => {
   return (
     <>
       {data ? (
-        <div className="flex flex-col justify-start border border-dotted border-yellow-300">
+        <div className=" h-screen flex flex-col justify-start border border-dotted border-yellow-300">
           <div>
             {(!countdown || !hearts) && (
               <GameOverModal
@@ -150,21 +148,13 @@ const UrduLetterGame = () => {
             />
           </div>
 
-          <div className="flex flex-row justify-end borderborder-dotted border-green ">
-            <div className="flex flex-row justify-around  border border-dotted border-blacker w-screen ">
-              <LeftCard leftcard={randomCards[randomNumberFromCardAmount]} />
-              <RightCard
-                rightcard={randomCards}
-                ChecksIfMatchOnClick={(card) => ChecksIfMatchOnClick(card)}
-                shake={shake}
-              />
-            </div>
-            <div className="hidden sm:block">
-              <LeaderBoard />
-            </div>
-          </div>
-          <div className=" md:hidden ">
-            <LeaderBoard />
+          <div className="flex flex-row justify-evenly h-screen">
+            <LeftCard leftcard={randomCards[randomNumberFromCardAmount]} />
+            <RightCard
+              rightcard={randomCards}
+              ChecksIfMatchOnClick={(card) => ChecksIfMatchOnClick(card)}
+              shake={shake}
+            />
           </div>
         </div>
       ) : (

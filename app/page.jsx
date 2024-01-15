@@ -22,9 +22,10 @@ export default function Home() {
         <Link href="/lessons">
           <button className={styles["button-home"]}>
             <span>See the levels</span>
-            <span>
-              <FontAwesomeIcon icon={faChartSimple} className="" />
-            </span>
+            <FontAwesomeIcon
+              icon={faChartSimple}
+              className=" text-green h-8 w-8"
+            />
           </button>
         </Link>
       </div>

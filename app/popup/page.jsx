@@ -1,5 +1,5 @@
 import React from "react";
-import GameOver from "../game/GameOver";
+import GameOver from "../game/GameOverModal";
 
 const page = () => {
   return (

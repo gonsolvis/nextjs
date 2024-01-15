@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
@@ -19,7 +19,7 @@ function HeartsComp({ heartsLeft }) {
       <FontAwesomeIcon icon={faHeart} style={{ color: "red" }} />
       <FontAwesomeIcon icon={faHeart} style={{ color: "red" }} />
       <FontAwesomeIcon icon={faHeart} style={{ color: "red" }} />
-      <FontAwesomeIcon icon={faHeart} style={{ color: "white" }} />
+      <FontAwesomeIcon icon={faHeart} style={{ color: "#BDBDBD" }} />
     </div>
   );
 
@@ -28,8 +28,8 @@ function HeartsComp({ heartsLeft }) {
       <FontAwesomeIcon icon={faHeart} style={{ color: "red" }} />
       <FontAwesomeIcon icon={faHeart} style={{ color: "red" }} />
       <FontAwesomeIcon icon={faHeart} style={{ color: "red" }} />
-      <FontAwesomeIcon icon={faHeart} style={{ color: "white" }} />
-      <FontAwesomeIcon icon={faHeart} style={{ color: "white" }} />
+      <FontAwesomeIcon icon={faHeart} style={{ color: "#BDBDBD" }} />
+      <FontAwesomeIcon icon={faHeart} style={{ color: "#BDBDBD" }} />
     </div>
   );
 
@@ -37,19 +37,28 @@ function HeartsComp({ heartsLeft }) {
     <div>
       <FontAwesomeIcon icon={faHeart} style={{ color: "red" }} />
       <FontAwesomeIcon icon={faHeart} style={{ color: "red" }} />
-      <FontAwesomeIcon icon={faHeart} style={{ color: "white" }} />
-      <FontAwesomeIcon icon={faHeart} style={{ color: "white" }} />
-      <FontAwesomeIcon icon={faHeart} style={{ color: "white" }} />
+      <FontAwesomeIcon icon={faHeart} style={{ color: "#BDBDBD" }} />
+      <FontAwesomeIcon icon={faHeart} style={{ color: "#BDBDBD" }} />
+      <FontAwesomeIcon icon={faHeart} style={{ color: "#BDBDBD" }} />
     </div>
   );
 
   const ONE_HEART = (
     <div>
       <FontAwesomeIcon icon={faHeart} style={{ color: "red" }} />
-      <FontAwesomeIcon icon={faHeart} style={{ color: "white" }} />
-      <FontAwesomeIcon icon={faHeart} style={{ color: "white" }} />
-      <FontAwesomeIcon icon={faHeart} style={{ color: "white" }} />
-      <FontAwesomeIcon icon={faHeart} style={{ color: "white" }} />
+      <FontAwesomeIcon icon={faHeart} style={{ color: "#BDBDBD" }} />
+      <FontAwesomeIcon icon={faHeart} style={{ color: "#BDBDBD" }} />
+      <FontAwesomeIcon icon={faHeart} style={{ color: "#BDBDBD" }} />
+      <FontAwesomeIcon icon={faHeart} style={{ color: "#BDBDBD" }} />
+    </div>
+  );
+  const NO_HEART = (
+    <div>
+      <FontAwesomeIcon icon={faHeart} style={{ color: "#BDBDBD" }} />
+      <FontAwesomeIcon icon={faHeart} style={{ color: "#BDBDBD" }} />
+      <FontAwesomeIcon icon={faHeart} style={{ color: "#BDBDBD" }} />
+      <FontAwesomeIcon icon={faHeart} style={{ color: "#BDBDBD" }} />
+      <FontAwesomeIcon icon={faHeart} style={{ color: "#BDBDBD" }} />
     </div>
   );
 
@@ -64,6 +73,8 @@ function HeartsComp({ heartsLeft }) {
       return TWO_HEARTS;
     } else if (heartsLeft === 1) {
       return ONE_HEART;
+    } else if (heartsLeft === 0) {
+      return NO_HEART;
     }
   }
 

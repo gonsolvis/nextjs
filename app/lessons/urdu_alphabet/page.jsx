@@ -54,8 +54,10 @@ const urdu_alphabet = async () => {
           <h2 className="text-2xl  mb-2">Practice Exercises</h2>
           <p className=" text-justify">
             Practice makes perfect! Use the interactive exercises{" "}
-            <Link href={`/`}>here</Link> to reinforce your understanding of Urdu
-            letters.
+            <span className=" font-bold text-purple">
+              <Link href={`/game`}>here</Link>
+            </span>{" "}
+            to reinforce your understanding of Urdu letters.
           </p>
         </div>
       </div>
