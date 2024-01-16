@@ -8,7 +8,6 @@ import SkeletonGameCardThree from "./SkeletonGameCardThree";
 import Banner from "./Banner";
 import GameOverModal from "./GameOverModal";
 import LeaderBoard from "./LeaderBoard";
-import LeaderBoard2 from "./LeaderBoard2";
 
 const UrduLetterGame = () => {
   const [data, setData] = useState(null);
@@ -66,7 +65,6 @@ const UrduLetterGame = () => {
 
     setRandomCards(newArrayOfNumbers.map((number) => cards[number]));
     setRandomNumberFromCardAmount(Math.floor(Math.random() * AMOUNT_OF_CARDS));
-    // console.log("setRandomCards", randomCards);
   }
   useEffect(() => {
     if (data) {

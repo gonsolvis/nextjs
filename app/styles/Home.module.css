@@ -52,23 +52,6 @@
   text-align: justify;
 }
 
-.button-home {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--white);
-  border: none;
-  width: 220px;
-  height: 60px;
-  border-radius: 0.25rem;
-  font-size: var(--button-font-size);
-  background-color: var(--purple);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  outline: none;
-  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
-  font-family: var(--funkyFont), sans-serif;
-}
-
 .levelChoiceLink {
   text-decoration: none;
 }

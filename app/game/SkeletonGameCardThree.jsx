@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDice } from "@fortawesome/free-solid-svg-icons";
 const SkeletonGameCardThree = () => {
   return (
-    <div className="h-screen flex flex-row justify-evenly border border-dotted border-yellow-300 bg-gray-300">
-      <div className="flex flex-col justify-center pt-2 pb-2 mr-2 border border-dotted border-red-700">
+    <div className="h-screen flex flex-row justify-evenly  bg-gray-300">
+      <div className="flex flex-col justify-center pt-2 pb-2 mr-2 ">
         <div
           role="status"
           className="space-y-8 animate-pulse md:space-y-0 md:space-x-8 rtl:space-x-reverse md:flex md:items-center"
@@ -20,12 +20,12 @@ const SkeletonGameCardThree = () => {
           </svg>
         </div>
       </div>
-      <div className=" border border-dotted border-red-700 flex items-center space-y-8 animate-pulse md:space-y-0 md:space-x-8 rtl:space-x-reverse  md:flex md:items-center">
+      <div className="  flex items-center space-y-8 animate-pulse md:space-y-0 md:space-x-8 rtl:space-x-reverse  md:flex md:items-center">
         <div
           role="status"
           className=" flex flex-col justify-between space-y-8 animate-pulse md:space-y-0 md:space-x-8 rtl:space-x-reverse md:flex md:items-center"
         >
-          <div className="border border-dotted border-yellow-300 flex flex-col justify-center items-center w-full bg-gray-300 rounded sm:w-96 dark:bg-gray-700">
+          <div className=" flex flex-col justify-center items-center w-full bg-gray-300 rounded sm:w-96 dark:bg-gray-700">
             <svg
               className="  w-32 h-32 md:w-52 md:h-52   lg:w-64 lg:h-64  text-gray-200 dark:text-gray-600 "
               aria-hidden="true"

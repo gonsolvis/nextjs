@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChartSimple } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 import styles from "./styles/Home.module.css"; // Adjust the import to match your file name
 
@@ -9,6 +10,14 @@ export default function Home() {
     <div className={styles.Home}>
       <div className={styles.leftside} id={styles.leftsideId}></div>
       <div className={styles.rightside}>
+        <Image
+          src="/urdulogo.png"
+          alt="Scriptlit logo"
+          width={200}
+          height={200}
+          className=" hidden  md:block lg:block"
+        />
+
         <h1 className={styles["urduTitle"]}>اسکرپٹ لِٹ</h1>
         <p className={styles["p-home"]}>
           Welcome to our attempt of teaching Urdu! I am not a native speaker and
@@ -19,12 +28,16 @@ export default function Home() {
           Click Below to choose the lessons from the different levels we have
           available!{" "}
         </p>
+
         <Link href="/lessons">
-          <button className={styles["button-home"]}>
-            <span>See the levels</span>
+          <button
+            type="button"
+            class="text-white bg-purple hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-lg px-6 py-4 text-center inline-flex items-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800"
+          >
+            See the levels
             <FontAwesomeIcon
               icon={faChartSimple}
-              className=" text-green h-8 w-8"
+              className=" text-white w-6 h-6 mx-3 "
             />
           </button>
         </Link>
