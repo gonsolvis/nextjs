@@ -8,6 +8,7 @@ import SkeletonGameCardThree from "./SkeletonGameCardThree";
 import Banner from "./Banner";
 import GameOverModal from "./GameOverModal";
 import LeaderBoard from "./LeaderBoard";
+import Image from "next/image";
 
 const UrduLetterGame = () => {
   const [data, setData] = useState(null);
@@ -127,7 +128,7 @@ const UrduLetterGame = () => {
   return (
     <>
       {data ? (
-        <div className="flex flex-col justify-start border border-dotted border-yellow-300">
+        <div className="flex flex-col justify-start relative ">
           <div>
             {(!countdown || !hearts) && (
               <GameOverModal
@@ -147,9 +148,8 @@ const UrduLetterGame = () => {
               textBigger={textBigger}
             />
           </div>
-
-          <div className="flex flex-row justify-end borderborder-dotted border-green ">
-            <div className="flex flex-row justify-around  border border-dotted border-blacker w-screen ">
+          <div className="flex flex-row justify-end ">
+            <div className="bg-my-background bg-center bg-no-repeat bg-cover  flex flex-row justify-around  w-screen ">
               <LeftCard leftcard={randomCards[randomNumberFromCardAmount]} />
               <RightCard
                 rightcard={randomCards}

@@ -3,7 +3,7 @@ import CardComp from "../(components)/cardComp";
 
 const lessonsLandingPage = () => {
   return (
-    <div className="h-screen flex justify-center items-center overflow-y-auto">
+    <div className="bg-lessons-background bg-center bg-no-repeat bg-cover  flex justify-around items-center h-screen">
       <div className="p-8">
         <CardComp />
       </div>

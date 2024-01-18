@@ -63,7 +63,7 @@ const LeaderBoard = () => {
         </thead>
 
         <tbody>
-          {sortedNumbers?.map((score, index) => (
+          {sortedNumbers?.slice(0, 20).map((score, index) => (
             <tr
               key={index}
               className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
