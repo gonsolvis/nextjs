@@ -75,8 +75,6 @@ const UrduLetterGame = () => {
 
   function ChecksIfMatchOnClick(card) {
     let leftCard = randomCards[randomNumberFromCardAmount]._id;
-    // console.log("Card clicked:", card);
-    // console.log("Card leftCard:", leftCard);
 
     if (leftCard === card) {
       console.log("MATCH");

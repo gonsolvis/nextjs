@@ -3,7 +3,7 @@ import SkeletonGameCardThree from "./SkeletonGameCardThree";
 import Link from "next/link";
 
 const RightCard = (props) => {
-  // console.log("rightcard", props);
+  console.log("rightcard", props);
 
   const handleCardClick = (card) => {
     props.ChecksIfMatchOnClick(card);
@@ -11,7 +11,7 @@ const RightCard = (props) => {
 
   return (
     <div className=" flex flex-col justify-evenly pt-2 pb-2 mr-2 ">
-      {props.RightCard.map((card, index) => (
+      {props.rightcard.map((card, index) => (
         <Link
           scroll={false}
           key={index}
