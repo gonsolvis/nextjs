@@ -8,7 +8,6 @@ import SkeletonGameCardThree from "./SkeletonGameCardThree";
 import Banner from "./Banner";
 import GameOverModal from "./GameOverModal";
 import LeaderBoard from "./LeaderBoard";
-import Image from "next/image";
 
 const UrduLetterGame = () => {
   const [data, setData] = useState(null);
