@@ -3,7 +3,6 @@ import React from "react";
 import Link from "next/link";
 
 const LeftCard = (props) => {
-  // console.log("props", props);
   return (
     <div className="flex flex-col justify-center item-center pt-2 pb-2 mr-2">
       {" "}

@@ -1,3 +1,4 @@
+"use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
@@ -13,8 +14,6 @@ const GameOver = (props) => {
 
   useEffect(() => {
     if (!scorePosted && props.score !== 0 && props.hearts !== 5) {
-      console.log("props.score", props.score);
-      console.log("props.heart", props.hearts);
       handleSubmit(); // Call handleSubmit immediately
     }
   }, [scorePosted]);
