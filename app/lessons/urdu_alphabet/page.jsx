@@ -21,8 +21,7 @@ const getLetters = async () => {
 
 const urdu_alphabet = async () => {
   const data = await getLetters();
-  console.log("data", data.tickets);
-  const Letters = data.tickets;
+  const Letters = data?.tickets;
 
   return (
     <div className="h-full flex justify-center items-center overflow-y-auto">
