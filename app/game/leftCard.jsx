@@ -15,7 +15,7 @@ const LeftCard = (props) => {
           {props?.leftcard?._id}
         </h5> */}
         <p className=" font-normal text-center text-gray-700 dark:text-gray-400 text-xl md:text-2xl ">
-          {props?.leftcard?.romanLetter}
+          {props?.LeftCard?.romanLetter}
         </p>
       </Link>
     </div>

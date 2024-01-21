@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import { useState, useEffect } from "react";
-import LeftCard from "./leftCard";
-import RightCard from "./rightCard";
+import LeftCard from "./LeftCard";
+import RightCard from "./RightCard";
 import axios from "axios";
 import SkeletonGameCardThree from "./SkeletonGameCardThree";
 import Banner from "./Banner";

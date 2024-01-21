@@ -4,7 +4,6 @@ import Countdown from "./Countdown";
 import HeartsComp from "./HeartsComp";
 
 const Banner = (props) => {
-  // console.log("propsBanner", props);
   return (
     <div>
       <div

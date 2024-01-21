@@ -11,7 +11,7 @@ const RightCard = (props) => {
 
   return (
     <div className=" flex flex-col justify-evenly pt-2 pb-2 mr-2 ">
-      {props.rightcard.map((card, index) => (
+      {props.RightCard.map((card, index) => (
         <Link
           scroll={false}
           key={index}
