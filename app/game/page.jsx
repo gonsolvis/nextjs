@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 import { useState, useEffect } from "react";
+import axios from "axios";
 import LeftCard from "./LeftCard";
 import RightCard from "./RightCard";
-import axios from "axios";
 import SkeletonGameCardThree from "./SkeletonGameCardThree";
 import Banner from "./Banner";
 import GameOverModal from "./GameOverModal";
@@ -35,8 +35,6 @@ const UrduLetterGame = () => {
       console.log("Error loading letters: ", error);
     }
   };
-
-  // console.log("Heyyyy i amw orking");
 
   useEffect(() => {
     getLetters();

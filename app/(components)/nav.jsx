@@ -1,15 +1,21 @@
 "use client";
-import { Alert } from "flowbite-react";
+import { useSession } from "next-auth/react";
 import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
 
-function Nav() {
+const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const { data: session } = useSession({
+    required: true,
+  });
+  console.log("data", session);
+  console.log("data image", session?.user?.image);
 
   return (
     <nav className="bg-whiter border-b-2 ">
@@ -62,57 +68,94 @@ function Nav() {
           id="navbar-default"
         >
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-whiter dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
+            <li className="flex items-center ">
               <Link
                 href="/"
-                className="block py-2 px-3 text-white bg-lesspurple rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                className="block py-4 px-3 text-white bg-lesspurple rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
                 aria-current="page"
                 onClick={toggleMenu}
               >
                 Home
               </Link>
             </li>
-            <li>
+            <li className="flex items-center ">
               <Link
                 onClick={toggleMenu}
                 href="/lessons"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-4 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Lessons
               </Link>
             </li>
-            <li>
+            <li className="flex items-center ">
               <Link
                 onClick={toggleMenu}
                 href="/game"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-4 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Games
               </Link>
             </li>
-            <li>
+            {/*     <li className="flex items-center ">
               <Link
                 onClick={toggleMenu}
                 href="/sign_up"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-4 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Sign up
               </Link>
-            </li>
-            <li>
+            </li> */}
+            <li className="flex items-center ">
               <Link
                 onClick={toggleMenu}
                 href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-4 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 About
               </Link>
+            </li>
+
+            <li className="flex flex-row items-center ">
+              {session ? (
+                <>
+                  <Link
+                    onClick={toggleMenu}
+                    href="/api/auth/signout?callbackUrl=/"
+                    className="block py-4 px-3 text-gray-900 rounded
+                  hover:bg-gray-100 md:hover:bg-transparent md:border-0
+                  md:hover:text-blue-700 md:p-0 dark:text-white
+                  md:dark:hover:text-blue-500 dark:hover:bg-gray-700
+                  dark:hover:text-white md:dark:hover:bg-transparent"
+                  >
+                    Log out
+                  </Link>
+                  <Image
+                    className="mx-4 rounded-full"
+                    src={session?.user?.image}
+                    alt="User avatar"
+                    width={40}
+                    height={40}
+                  />
+                </>
+              ) : (
+                <Link
+                  onClick={toggleMenu}
+                  href="/api/auth/signin"
+                  className="block py-4 px-3 text-gray-900 rounded
+                  hover:bg-gray-100 md:hover:bg-transparent md:border-0
+                  md:hover:text-blue-700 md:p-0 dark:text-white
+                  md:dark:hover:text-blue-500 dark:hover:bg-gray-700
+                  dark:hover:text-white md:dark:hover:bg-transparent"
+                >
+                  Log in
+                </Link>
+              )}
             </li>
           </ul>
         </div>
       </div>
     </nav>
   );
-}
+};
 
 export default Nav;
