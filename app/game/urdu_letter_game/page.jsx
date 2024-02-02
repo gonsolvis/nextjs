@@ -2,12 +2,12 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import LeftCard from "./LeftCard";
-import RightCard from "./RightCard";
-import SkeletonGameCardThree from "./SkeletonGameCardThree";
-import Banner from "./Banner";
-import GameOverModal from "./GameOverModal";
-import LeaderBoard from "./LeaderBoard";
+import LeftCard from "../LeftCard";
+import RightCard from "../RightCard";
+import SkeletonGameCardThree from "../SkeletonGameCardThree";
+import Banner from "../Banner";
+import GameOverModal from "../GameOverModal";
+import LeaderBoard from "../LeaderBoard";
 
 const UrduLetterGame = () => {
   const [data, setData] = useState(null);

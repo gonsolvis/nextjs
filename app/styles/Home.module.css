@@ -37,7 +37,8 @@
 }
 .urduTitle {
   font-family: "Noto Nastaliq Urdu", serif;
-  font-size: 5rem;
+  font-size: 4rem;
+  text-align: center;
 }
 
 .p-home {

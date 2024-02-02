@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLanguage } from "@fortawesome/free-solid-svg-icons";
 
-const CardComp = () => {
+const CardComp = (props) => {
   return (
     <div>
       <div className=" flex flex-col justify-center items-center max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -18,18 +18,17 @@ const CardComp = () => {
         </div>
         <a href="#">
           <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-            Alphabet part-one
+            {props.title}
           </h5>
         </a>
         <p className="mb-3 font-normal text-gray-500 dark:text-gray-400 text-justify">
-          Dive into our first lessons. Gain an understanding of the alphabet
-          ensuring a strong foundation for language mastery.
+          {props.description}
         </p>
         <a
-          href="/lessons/urdu_alphabet"
+          href={props.link}
           className="inline-flex items-center text-purple    hover:underline"
         >
-          See our lesson
+          {props.link_info}
           <svg
             className="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
             aria-hidden="true"

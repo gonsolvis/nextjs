@@ -19,11 +19,11 @@ export default function Home() {
           className=" hidden  md:block lg:block"
         />
 
-        <h1 className={styles["urduTitle"]}>اسکرپٹ لِٹ</h1>
+        <h1 className={styles["urduTitle"]}>स्क्रिप्टलिट | اسکرپٹ لِٹ</h1>
         <p className={styles["p-home"]}>
-          Welcome to our attempt of teaching Urdu! I am not a native speaker and
-          neither is chatGpt, but we only try our best to teach for free those
-          who want to learn.
+          Welcome to our attempt of teaching Hindi and some Urdu! I am not a
+          native speaker and neither is chatGpt, but we only try our best to
+          teach for free those who want to learn.
         </p>
         <p className={`${styles.pHome2} hidden sm:block md:block lg:block`}>
           Click Below to choose the lessons from the different levels we have
@@ -35,7 +35,7 @@ export default function Home() {
             type="button"
             className="text-white bg-purple hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-lg px-6 py-4 text-center inline-flex items-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800"
           >
-            See the levels
+            See the lessons
             <FontAwesomeIcon
               icon={faChartSimple}
               className=" text-white w-6 h-6 mx-3 "

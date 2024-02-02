@@ -1,0 +1,43 @@
+[
+  {
+    "type": "Consonants",
+    "letters": [
+      { "romanLetter": "ka", "hindiLetter": "क" },
+      { "romanLetter": "kha", "hindiLetter": "ख" },
+      { "romanLetter": "ga", "hindiLetter": "ग" },
+      { "romanLetter": "gha", "hindiLetter": "घ" },
+      { "romanLetter": "ṅa", "hindiLetter": "ङ" },
+      { "romanLetter": "cha", "hindiLetter": "च" },
+      { "romanLetter": "chha", "hindiLetter": "छ" },
+      { "romanLetter": "ja", "hindiLetter": "ज" },
+      { "romanLetter": "jha", "hindiLetter": "झ" },
+      { "romanLetter": "ña", "hindiLetter": "ञ" },
+      { "romanLetter": "ṭa", "hindiLetter": "ट" },
+      { "romanLetter": "ṭha", "hindiLetter": "ठ" },
+      { "romanLetter": "ḍa", "hindiLetter": "ड" },
+      { "romanLetter": "ḍha", "hindiLetter": "ढ" },
+      { "romanLetter": "ṇa", "hindiLetter": "ण" },
+      { "romanLetter": "ta", "hindiLetter": "त" },
+      { "romanLetter": "tha", "hindiLetter": "थ" },
+      { "romanLetter": "da", "hindiLetter": "द" },
+      { "romanLetter": "dha", "hindiLetter": "ध" },
+      { "romanLetter": "na", "hindiLetter": "न" },
+      { "romanLetter": "pa", "hindiLetter": "प" },
+      { "romanLetter": "pha", "hindiLetter": "फ" },
+      { "romanLetter": "ba", "hindiLetter": "ब" },
+      { "romanLetter": "bha", "hindiLetter": "भ" },
+      { "romanLetter": "ma", "hindiLetter": "म" },
+      { "romanLetter": "ya", "hindiLetter": "य" },
+      { "romanLetter": "ra", "hindiLetter": "र" },
+      { "romanLetter": "la", "hindiLetter": "ल" },
+      { "romanLetter": "va", "hindiLetter": "व" },
+      { "romanLetter": "śa", "hindiLetter": "श" },
+      { "romanLetter": "ṣa", "hindiLetter": "ष" },
+      { "romanLetter": "sa", "hindiLetter": "स" },
+      { "romanLetter": "ha", "hindiLetter": "ह" },
+      { "romanLetter": "kṣa", "hindiLetter": "क्ष" },
+      { "romanLetter": "tra", "hindiLetter": "त्र" },
+      { "romanLetter": "jña", "hindiLetter": "ज्ञ" }
+    ]
+  }
+]

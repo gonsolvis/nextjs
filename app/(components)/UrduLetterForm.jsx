@@ -2,7 +2,7 @@
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
-const UrduLetterForm = () => {
+const HindiLetterForm = () => {
   const router = useRouter();
   const handleChange = (e) => {
     const value = e.target.value;
@@ -16,7 +16,7 @@ const UrduLetterForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch("/api/UrduLetters", {
+    const res = await fetch("/api/HindiLetters", {
       method: "POST",
       body: JSON.stringify({ formData }),
       "Content-Type": "application/json",
@@ -52,11 +52,11 @@ const UrduLetterForm = () => {
         ></input>
         <label> Urdu Letter</label>
         <input
-          id="urduLetter"
-          name="urduLetter"
+          id="HindiLetter"
+          name="HindiLetter"
           onChange={handleChange}
           required={true}
-          value={formData.urduLetter}
+          value={formData.HindiLetter}
         ></input>
 
         <input
@@ -69,4 +69,4 @@ const UrduLetterForm = () => {
   );
 };
 
-export default UrduLetterForm;
+export default HindiLetterForm;

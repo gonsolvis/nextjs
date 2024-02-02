@@ -8,7 +8,7 @@ const Table = (props) => {
           <tr>
             <th className="border p-2"> </th>
             <th className="border p-2">Latin Letter</th>
-            <th className="border p-2"> Roman Letter</th>
+            <th className="border p-2"> Script</th>
           </tr>
         </thead>
         <tbody>
@@ -16,7 +16,9 @@ const Table = (props) => {
             <tr className=" hover:" key={index}>
               <td className="border p-2">{index + 1}</td>
               <td className="border p-2">{letter.romanLetter}</td>
-              <td className="border p-2 text-lg">{letter.urduLetter}</td>
+              <td className="border p-2 text-2xl">
+                {letter.urduLetter ? letter.urduLetter : letter.hindiLetter}
+              </td>
             </tr>
           ))}
         </tbody>

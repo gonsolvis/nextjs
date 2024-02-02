@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Table from "../table";
+import Table from "../../(components)/table";
 import SkeletonTable from "../SkeletonTable";
 
 const getLetters = async () => {
@@ -54,7 +54,7 @@ const urdu_alphabet = async () => {
           <p className=" text-justify">
             Practice makes perfect! Use the interactive exercises{" "}
             <span className=" font-bold text-purple">
-              <Link href={`/game`}>here</Link>
+              <Link href={`/game/urdu_letter_game`}>here</Link>
             </span>{" "}
             to reinforce your understanding of Urdu letters.
           </p>
