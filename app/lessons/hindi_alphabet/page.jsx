@@ -21,7 +21,10 @@ const getLetters = async () => {
 
 const hindi_alphabet = async () => {
   const data = await getLetters();
-  const Letters = data?.tickets[0].letters;
+  console.log("data?.tickets[0]", data?.tickets[1]);
+  const CONSONTANTS = data?.tickets[0].letters;
+  const VOWELS = data?.tickets[1].letters;
+  const CONJUNCTCONSAN = data?.tickets[2].letters;
 
   return (
     <div className="h-full flex justify-center items-center overflow-y-auto">
@@ -56,7 +59,41 @@ const hindi_alphabet = async () => {
             essential building blocks of the Hindi language.
           </p>
 
-          {Letters ? <Table Letters={Letters} /> : <SkeletonTable />}
+          {CONSONTANTS ? <Table Letters={CONSONTANTS} /> : <SkeletonTable />}
+        </div>
+
+        <div className="mb-6 text-justify">
+          <h2 className="text-2xl mb-2">Vowels</h2>
+          <p className="text-justify">
+            It's important to note that vowels in Hindi can be standalone or
+            combined with consonants to form syllables. The pronunciation of
+            vowels may vary slightly depending on their placement in a word and
+            surrounding consonants. Additionally, long vowels are held for a
+            longer duration compared to their short counterparts. Learning these
+            vowels is essential for understanding and correctly pronouncing
+            Hindi words.
+          </p>
+
+          {VOWELS ? <Table Letters={VOWELS} /> : <SkeletonTable />}
+        </div>
+
+        <div className="mb-6 text-justify">
+          <h2 className="text-2xl mb-2">Vowels</h2>
+          <p className="text-justify">
+            It's important to note that vowels in Hindi can be standalone or
+            combined with consonants to form syllables. The pronunciation of
+            vowels may vary slightly depending on their placement in a word and
+            surrounding consonants. Additionally, long vowels are held for a
+            longer duration compared to their short counterparts. Learning these
+            vowels is essential for understanding and correctly pronouncing
+            Hindi words.
+          </p>
+
+          {CONJUNCTCONSAN ? (
+            <Table Letters={CONJUNCTCONSAN} />
+          ) : (
+            <SkeletonTable />
+          )}
         </div>
 
         <div>
@@ -64,7 +101,7 @@ const hindi_alphabet = async () => {
           <p className=" text-justify">
             Practice makes perfect! Use the interactive exercises{" "}
             <span className=" font-bold text-purple">
-              <Link href={`/game`}>here</Link>
+              <Link href={`/game/hindi_letter_game`}>here</Link>
             </span>{" "}
             to reinforce your understanding of Urdu letters.
           </p>

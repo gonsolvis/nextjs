@@ -1,21 +1,11 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLanguage } from "@fortawesome/free-solid-svg-icons";
+import CardIcon from "./CardIcon";
 
 const CardComp = (props) => {
   return (
     <div>
       <div className=" flex flex-col justify-center items-center max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        {/* <FontAwesomeIcon
-          icon={faLanguage}
-          className="fas faLanguage text-red-500 text-3xl mx-2 my-1"
-        /> */}
-        <div className=" flex justify-center  w-20">
-          <FontAwesomeIcon
-            icon={faLanguage}
-            className="text-blacker mx-2 my-1"
-          />
-        </div>
+        <CardIcon props={props} />
         <a href="#">
           <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
             {props.title}

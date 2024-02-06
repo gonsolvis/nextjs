@@ -22,7 +22,7 @@ const RightCard = (props) => {
           onClick={() => handleCardClick(card._id)}
         >
           <p className=" flex justify-center font-normal  text-gray-700 dark:text-gray-400 text-5xl md:text-5xl   lg: ">
-            {card.urduLetter}
+            {card.urduLetter ? card.urduLetter : card.hindiLetter}
           </p>
         </Link>
       ))}
