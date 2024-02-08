@@ -65,7 +65,7 @@ const hindi_alphabet = async () => {
         <div className="mb-6 text-justify">
           <h2 className="text-2xl mb-2">Vowels</h2>
           <p className="text-justify">
-            It's important to note that vowels in Hindi can be standalone or
+            It&apos;s important to note that vowels in Hindi can be standalone or
             combined with consonants to form syllables. The pronunciation of
             vowels may vary slightly depending on their placement in a word and
             surrounding consonants. Additionally, long vowels are held for a
@@ -80,7 +80,7 @@ const hindi_alphabet = async () => {
         <div className="mb-6 text-justify">
           <h2 className="text-2xl mb-2">Vowels</h2>
           <p className="text-justify">
-            It's important to note that vowels in Hindi can be standalone or
+            It&apos;s important to note that vowels in Hindi can be standalone or
             combined with consonants to form syllables. The pronunciation of
             vowels may vary slightly depending on their placement in a word and
             surrounding consonants. Additionally, long vowels are held for a

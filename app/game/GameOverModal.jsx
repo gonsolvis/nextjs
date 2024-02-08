@@ -15,7 +15,7 @@ const GameOver = (props) => {
   useEffect(() => {
     if (!scorePosted && props.score !== 0 && props.hearts !== 5) {
       handleSubmit(); // Call handleSubmit immediately
-    }
+    } 
   }, [scorePosted]);
 
   const handleSubmit = async (e) => {

@@ -32,7 +32,7 @@ const urdu_alphabet = async () => {
           <h2 className="text-2xl mb-2 text-justify">Introduction</h2>
           <p>
             Welcome to Lesson One of learning Urdu letters! In this lesson,
-            we'll start with the basics and explore the foundation of Urdu
+            we&apos;ll start with the basics and explore the foundation of Urdu
             script.
           </p>
         </div>
@@ -41,9 +41,17 @@ const urdu_alphabet = async () => {
           <h2 className="text-2xl mb-2">Urdu Alphabets</h2>
           <p>
             The Urdu script encompasses 39 characters, including 37 core letters
-            and 2 additional characters, such as 'TayD,' 'RayD,' 'Choti Yeh,'
-            and 'HeD,' which are used in specific contexts or loanwords. Let's
-            start by familiarizing ourselves with the basic letters.
+            and 2 additional characters, such as &apos;TayD,&apos;
+&apos; &apos;
+&apos;RayD,&apos;
+&apos; &apos;
+&apos;Choti Yeh,&apos;
+&apos;
+            and &apos;
+&apos;HeD,&apos;
+&apos; which are used in specific contexts or loanwords. Let&apos;
+&apos;s
+            start by familiarizing ourselves with the basic letters. 
           </p>
 
           {Letters ? <Table Letters={Letters} /> : <SkeletonTable />}

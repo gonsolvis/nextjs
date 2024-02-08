@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import AuthProvider from "./(components)/AuthProvider";
 import "./styles/globals.css";
-import Nav from "./(components)/Nav";
+//import Nav from "./(components)/Nav";
 import Footer from "./(components)/footer";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <AuthProvider>
         <body className={inter.className}>
-          <Nav />
+          {/* <Nav /> */}
           <div className=" bg-whiter h-auto">{children}</div>
           <Footer />
         </body>
