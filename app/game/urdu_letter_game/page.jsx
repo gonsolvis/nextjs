@@ -2,8 +2,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
-// import LeftCard from "@/app/game/LeftCard"
-// import RightCard from "@/app/game/RightCard"
+import LeftCard from "@/app/game/LeftCard"
+import RightCard from "@/app/game/RightCard"
 import SkeletonGameCardThree from "../SkeletonGameCardThree";
 import Banner from "../Banner";
 import GameOverModal from "../GameOverModal";
@@ -145,12 +145,12 @@ const UrduLetterGame = () => {
           </div>
           <div className="flex flex-row justify-end ">
             <div className="bg-my-background bg-center bg-no-repeat bg-cover  flex flex-row justify-around  w-screen ">
-              {/* <LeftCard leftcard={randomCards[randomNumberFromCardAmount]} />
+              <LeftCard leftcard={randomCards[randomNumberFromCardAmount]} />
               <RightCard
                 rightcard={randomCards}
                 ChecksIfMatchOnClick={(card) => ChecksIfMatchOnClick(card)}
                 shake={shake}
-              /> */}
+              />
             </div>
             <div className="hidden sm:block">
               <LeaderBoard />
