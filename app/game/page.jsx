@@ -1,6 +1,6 @@
 import React from "react";
 import CardComp from "../(components)/cardComp";
-import GAMES_OVERAL_CARDS from "../data/GAMES_OVERAL_CARDS";
+import GAMES_OVERAL_CARDS from "@/app/data/LESSONS_OVERALL_CARD"
 
 const gamesLandingPage = () => {
   return (
