@@ -1,6 +1,7 @@
 import React from "react";
 import CardComp from "../(components)/cardComp";
-import LESSONS_OVERALL_CARD from "../data/LESSONS_OVERALL_CARD";
+import LESSONS_OVERALL_CARD from "@/app/data/LESSONS_OVERALL_CARD"
+
 
 const lessonsLandingPage = () => {
   return (
@@ -9,10 +10,10 @@ const lessonsLandingPage = () => {
         {LESSONS_OVERALL_CARD?.map((lesson, index) => (
           <div key={index} className="mx-2 my-2  ">
             <CardComp
-              title={lesson.lesson.title}
-              description={lesson.lesson.description}
-              link={lesson.lesson.link}
-              link_info={lesson.lesson.link_info}
+              title={lesson?.lesson?.title}
+              description={lesson?.lesson?.description}
+              link={lesson?.lesson?.link}
+              link_info={lesson?.lesson?.link_info}
             />
           </div>
         ))}

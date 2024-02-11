@@ -22,9 +22,9 @@ const getLetters = async () => {
 const hindi_alphabet = async () => {
   const data = await getLetters();
   console.log("data?.tickets[0]", data?.tickets[1]);
-  const CONSONTANTS = data?.tickets[0].letters;
-  const VOWELS = data?.tickets[1].letters;
-  const CONJUNCTCONSAN = data?.tickets[2].letters;
+  const CONSONTANTS = data?.tickets[0]?.letters;
+  const VOWELS = data?.tickets[1]?.letters;
+  const CONJUNCTCONSAN = data?.tickets[2]?.letters;
 
   return (
     <div className="h-full flex justify-center items-center overflow-y-auto">

@@ -44,7 +44,7 @@ const HindiLetterGame = () => {
     let cards;
     if (data) {
       console.log("datassss", data);
-      cards = data?.tickets[0].letters;
+      cards = data?.tickets[0]?.letters;
     }
 
     if (!cards) {

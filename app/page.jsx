@@ -15,7 +15,6 @@ export default function Home() {
           alt="Scriptlit logo"
           width={200}
           height={200}
-          wid
           className=" hidden  md:block lg:block"
         />
 

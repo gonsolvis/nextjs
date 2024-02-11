@@ -14,8 +14,6 @@ const Nav = () => {
   const { data: session } = useSession({
     required: true,
   });
-  console.log("data", session);
-  console.log("data image", session?.user?.image);
 
   return (
     <nav className="bg-whiter border-b-2 ">
