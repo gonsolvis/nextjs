@@ -2,8 +2,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import LeftCard from "@/app/game/LeftCard"
-import RightCard from "@/app/game/RightCard"
+import LeftCard from "../LeftCard";
+import RightCard from "../RightCard";
 import SkeletonGameCardThree from "../SkeletonGameCardThree";
 import Banner from "../Banner";
 import GameOverModal from "../GameOverModal";
