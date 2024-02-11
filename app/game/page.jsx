@@ -2,6 +2,7 @@ import React from "react";
 import CardComp from "../(components)/cardComp";
 import GAMES_OVERAL_CARDS from "../data/GAMES_OVERAL_CARDS";
 
+
 const page = () => {
   return (
     <div className="bg-lessons-background bg-center bg-no-repeat bg-cover  flex justify-around items-center h-screen">
