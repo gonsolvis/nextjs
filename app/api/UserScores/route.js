@@ -22,6 +22,7 @@ export async function POST(req) {
 export async function GET() {
   try {
     const scores = await UserScore.find();
+    console.log(scores)
     return NextResponse.json({ scores }, { status: 200 });
   } catch (error) {
     return NextResponse.json(

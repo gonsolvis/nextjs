@@ -12,7 +12,7 @@ const Nav = () => {
   };
 
   const { data: session } = useSession({
-    required: true,
+    required: false,
   });
 
   return (

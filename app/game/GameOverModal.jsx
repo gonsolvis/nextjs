@@ -1,15 +1,27 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { useSession } from "next-auth/react";
 import Link from "next/link";
 
 const GameOver = (props) => {
   console.log("GameOverprops", props);
+
+  const { data: session } = useSession({
+    required: true,
+  });
+
+
   const [scorePosted, setScorePosted] = useState(false);
 
   const startingPlaceholderData = {
     score: props.score,
     lives: props.hearts,
+    email: session?.user?.email,
+    name: session?.user?.name,
+    image: session?.user?.image
+
   };
+
   const [scoreData, setScoreData] = useState(startingPlaceholderData);
 
   useEffect(() => {
@@ -73,7 +85,7 @@ const GameOver = (props) => {
           >
             Want to play again?
           </button>
-          <Link href="/lessons/urdu_alphabet">
+          <Link href={`/lessons/${props.language}_alphabet`}>
             <button
               data-modal-hide="popup-modal"
               type="button"

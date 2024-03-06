@@ -20,6 +20,9 @@ const HindiLetterGame = () => {
   const [shake, setShake] = useState(false);
   const [textBigger, setTextBigger] = useState(false);
 
+
+
+
   const getLetters = async () => {
     try {
       const res = await axios.get("http://localhost:3000/api/HindiLetters", {
@@ -40,11 +43,20 @@ const HindiLetterGame = () => {
     getLetters();
   }, []);
 
+
+
+
+ 
+
   function createCards() {
-    let cards;
+    let cards = []
     if (data) {
-      console.log("datassss", data);
-      cards = data?.tickets[0]?.letters;
+   
+      data.tickets.map((i) => {
+        cards = cards.concat(i.letters);
+      });
+      
+     
     }
 
     if (!cards) {
@@ -132,6 +144,7 @@ const HindiLetterGame = () => {
                 hearts={hearts}
                 score={score}
                 restartGame={() => restartGame()}
+                language={"hindi"}
               />
             )}
           </div>

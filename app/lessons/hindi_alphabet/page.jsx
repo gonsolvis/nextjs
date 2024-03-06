@@ -103,7 +103,7 @@ const hindi_alphabet = async () => {
             <span className=" font-bold text-purple">
               <Link href={`/game/hindi_letter_game`}>here</Link>
             </span>{" "}
-            to reinforce your understanding of Urdu letters.
+            to reinforce your understanding of Hindi letters.
           </p>
         </div>
       </div>

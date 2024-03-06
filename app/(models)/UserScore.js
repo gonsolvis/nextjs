@@ -15,6 +15,20 @@ const userScoreSchema = new Schema(
       required: true,
       trim: true,
     },
+    email: {
+      type: String,
+      trim: true,
+      lowercase: true,
+      match: [/^\S+@\S+\.\S+$/, "Please enter a valid email address."],
+    },
+    name: {
+      type: String,
+      required: true,
+      trim: true
+    },
+    image: {
+      type: String,
+    },
   },
   {
     timestamps: true,
@@ -22,6 +36,6 @@ const userScoreSchema = new Schema(
 );
 
 const UserScore =
-  mongoose.models.testuserscorecollection ||
-  mongoose.model("testuserscorecollection", userScoreSchema);
+  mongoose.models.testuserscorecollectionb ||
+  mongoose.model("testuserscorecollectionb", userScoreSchema);
 export default UserScore;

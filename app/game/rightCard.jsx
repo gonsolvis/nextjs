@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 const RightCard = (props) => {
-  console.log("rightcard", props);
+
 
   const handleCardClick = (card) => {
     props.ChecksIfMatchOnClick(card);

@@ -131,6 +131,7 @@ const UrduLetterGame = () => {
                 hearts={hearts}
                 score={score}
                 restartGame={() => restartGame()}
+                language={"urdu"}
               />
             )}
           </div>
