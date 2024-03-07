@@ -7,7 +7,6 @@ import urdulogo from "@/public/Urdulogo.png";
 import styles from "./styles/Home.module.css"; // Adjust the import to match your file name
 
 export default function Home() {
-  console.log("urdulogo", urdulogo)
   return (
     <div className={styles.Home}>
       <div className={styles.leftside} id={styles.leftsideId}></div>
