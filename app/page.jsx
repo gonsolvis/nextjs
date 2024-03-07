@@ -2,16 +2,18 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChartSimple } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+import urdulogo from "@/public/Urdulogo.png";
 
 import styles from "./styles/Home.module.css"; // Adjust the import to match your file name
 
 export default function Home() {
+  console.log("urdulogo", urdulogo)
   return (
     <div className={styles.Home}>
       <div className={styles.leftside} id={styles.leftsideId}></div>
       <div className={styles.rightside}>
         <Image
-          src="/urdulogo.png"
+          src={urdulogo}
           alt="Scriptlit logo"
           width={200}
           height={200}
