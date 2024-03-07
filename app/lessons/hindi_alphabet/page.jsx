@@ -5,7 +5,7 @@ import SkeletonTable from "../SkeletonTable";
 
 const getLetters = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/HindiLetters", {
+    const res = await fetch(`${process.env.NEXT_AUTH_URL}/api/HindiLetters`, {
       cache: "no-store",
     });
 

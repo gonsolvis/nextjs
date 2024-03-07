@@ -25,7 +25,7 @@ const HindiLetterGame = () => {
 
   const getLetters = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/api/HindiLetters", {
+      const res = await axios.get(`${process.env.NEXT_AUTH_URL}/api/HindiLetters`, {
         cache: "no-store",
       });
 

@@ -22,7 +22,7 @@ const UrduLetterGame = () => {
 
   const getLetters = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/api/UrduLetters", {
+      const res = await axios.get(`${process.env.NEXT_AUTH_URL}/api/UrduLetters`, {
         cache: "no-store",
       });
 

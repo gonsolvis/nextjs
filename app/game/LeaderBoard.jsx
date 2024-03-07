@@ -24,7 +24,7 @@ const LeaderBoard = () => {
 
   const getScores = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/api/UserScores", {
+      const res = await axios.get(`${process.env.NEXT_AUTH_URL}/api/UserScores`, {
         cache: "no-store",
       });
 
