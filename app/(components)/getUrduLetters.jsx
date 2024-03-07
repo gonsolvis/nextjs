@@ -3,7 +3,7 @@ import React from "react";
 const getUrduLetters = () => {
   const getLetters = async () => {
     try {
-      const res = await fetch(`${process.env.NEXT_AUTH_URL}/api/UrduLetters`, {
+      const res = await fetch(`/api/UrduLetters`, {
         cache: "no-store",
       });
 

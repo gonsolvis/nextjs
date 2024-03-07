@@ -25,7 +25,7 @@ const HindiLetterGame = () => {
 
   const getLetters = async () => {
     try {
-      const res = await axios.get(`${process.env.NEXT_AUTH_URL}/api/HindiLetters`, {
+      const res = await axios.get(`/api/HindiLetters`, {
         cache: "no-store",
       });
 
@@ -38,6 +38,8 @@ const HindiLetterGame = () => {
       console.log("Error loading letters: ", error);
     }
   };
+
+
 
   useEffect(() => {
     getLetters();
