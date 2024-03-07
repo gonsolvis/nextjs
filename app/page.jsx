@@ -25,7 +25,7 @@ export default function Home() {
           teach for free those who want to learn.
         </p>
         <p className={`${styles.pHome2} hidden sm:block md:block lg:block`}>
-          Click Below to choose the lessons from the different levels we have
+          Click Below to choose theeeee lessons from the different levels we have
           available!{" "}
         </p>
 
