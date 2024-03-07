@@ -3,6 +3,7 @@ import { useSession } from "next-auth/react";
 import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
+import urdulogo from "@/public/Urdulogo.png";
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,7 +24,7 @@ const Nav = () => {
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <Image
-            src="/urdulogo.png"
+            src={urdulogo}
             alt="Scriptlit logo"
             width={40}
             height={40}
