@@ -1,6 +1,7 @@
 import GitHubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
 
+console.log("hello2")
 export const options = {
   providers: [
     GitHubProvider({
@@ -15,7 +16,7 @@ export const options = {
         return {
           ...profile,
           role: userRole,
-          image: profile?.avatar_url,
+          image: profile?.avatar_url
         };
       },
       clientId: process.env.GITHUB_ID,
