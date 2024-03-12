@@ -26,7 +26,7 @@ const urdu_alphabet = async () => {
   return (
     <div className="h-full flex justify-center items-center overflow-y-auto">
       <div className=" p-8 rounded-lg text-black">
-        <h1 className="text-3xl  mb-4">Lesson Oneeeeeeee: Urdu Letters</h1>
+        <h1 className="text-3xl  mb-4">Lesson One: Urdu Letters</h1>
 
         <div className="mb-6">
           <h2 className="text-2xl mb-2 text-justify">Introduction</h2>
