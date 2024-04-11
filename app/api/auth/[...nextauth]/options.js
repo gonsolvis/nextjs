@@ -10,7 +10,7 @@ export const options = {
         let userRole = "GitHub User";
         if (profile?.email == "gonsolvis@gmail.com") {
           userRole = "admin";
-          console.log("Userrole:", userRole);
+          console.log("Userrle:", userRole);
         }
 
         return {
@@ -37,6 +37,9 @@ export const options = {
       clientSecret: process.env.GOOGLE_Secret,
     }),
   ],
+  // pages:{
+  //   signIn: '/api/auth/signin'
+  // },
   callbacks: {
     async jwt({ token, user }) {
       if (user) token.role = user.role;

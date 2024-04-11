@@ -21,6 +21,8 @@ export default function Home() {
 
         <h1 className={styles["urduTitle"]}>स्क्रिप्टलिट | اسکرپٹ لِٹ</h1>
         <p className={styles["p-home"]}>
+        {process.env.NEXTAUTH_URL}
+          
           Welcome to our attempt of teaching Hindi and some Urdu! I am not a
           native speaker and neither is chatGpt, but we only try our best to
           teach for free those who want to learn.
