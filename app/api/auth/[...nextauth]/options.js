@@ -37,9 +37,6 @@ export const options = {
       clientSecret: process.env.GOOGLE_Secret,
     }),
   ],
-  // pages:{
-  //   signIn: '/api/auth/signin'
-  // },
   callbacks: {
     async jwt({ token, user }) {
       if (user) token.role = user.role;
