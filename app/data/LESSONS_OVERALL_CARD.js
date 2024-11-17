@@ -19,6 +19,15 @@ const LESSONS_OVERALL_CARD = [
       link_info: "See lesson",
     },
   },
+  {
+    language: "Hindi",
+    lesson: {
+      title: "Tenses",
+      description:" Learn how to form verbs that allow you to express time. Tenses tells us when an event or something existed or when a person did something. Past, present, and future.",
+      link: "/lessons/tenses",
+      link_info: "See lesson",
+    },
+  },
 ];
 
 export default LESSONS_OVERALL_CARD;
